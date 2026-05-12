@@ -1,7 +1,7 @@
 import { PropertyDetails, SectionLink, AgentDetails } from './types';
 
 // TOGGLE THIS TO FALSE TO SHOW THE FULL WEBSITE
-export const SHOW_COMING_SOON = true;
+export const SHOW_COMING_SOON = false;
 
 export const AGENT_INFO: AgentDetails = {
   name: "“Patricia” Julie Schilling",
@@ -13,8 +13,9 @@ export const AGENT_INFO: AgentDetails = {
 export const PROPERTY_INFO: PropertyDetails = {
   address: "504 E Black Diamond Dr",
   cityStateZip: "Casa Grande, AZ 85122",
-  price: "$419,000",
-  status: "For Sale",
+  price: "$414,900",
+  originalPrice: "$419,000",
+  status: "Price Reduced",
   beds: 4,
   baths: 2,
   sqft: 2708,
@@ -35,6 +36,7 @@ export const PROPERTY_INFO: PropertyDetails = {
 export const NAVIGATION_LINKS: SectionLink[] = [
   { label: "Home", href: "#home" },
   { label: "Details", href: "#details" },
+  { label: "Video", href: "#video" },
   { label: "Gallery", href: "#gallery" },
   { label: "Location", href: "#map" },
 ];

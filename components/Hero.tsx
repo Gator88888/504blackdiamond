@@ -5,8 +5,9 @@ const Hero: React.FC = () => {
     <div className="w-full h-[85vh] relative overflow-hidden bg-navy-950" id="home">
       <img 
         src="images/6981779_1_0.jpg" 
-        alt="504 E Black Diamond Dr" 
+        alt="504 E Black Diamond Dr, Casa Grande AZ - Single level home with solar and 3 car garage" 
         className="w-full h-full object-cover animate-ken-burns opacity-70"
+        {...{ fetchpriority: 'high' } as any}
         onError={(e) => {
           e.currentTarget.src = 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop';
         }}
@@ -16,7 +17,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 flex items-center justify-center text-center p-6">
         <div className="max-w-5xl mx-auto reveal">
           <p className="font-sans font-bold text-xs md:text-sm lg:text-lg uppercase tracking-[0.3em] text-gold-light mb-6 md:mb-8 drop-shadow-md">
-            Expansive Single-Level Living
+            Expansive Single-Level Living in Ghost Ranch
           </p>
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-tight shadow-black drop-shadow-lg">
             Welcome to Your <br className="hidden md:block" /> Forever Home

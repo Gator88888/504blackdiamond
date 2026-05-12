@@ -2,6 +2,7 @@ export interface PropertyDetails {
   address: string;
   cityStateZip: string;
   price: string;
+  originalPrice?: string;
   status: string;
   beds: number;
   baths: number;

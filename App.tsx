@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Details from './components/Details';
+import VideoSection from './components/VideoSection';
 import Gallery from './components/Gallery';
 import Map from './components/Map';
 import { HOASection, SolarSection } from './components/InfoSections';
@@ -83,6 +84,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <Details />
+        <VideoSection />
         <Gallery />
         <SolarSection />
         <HOASection />

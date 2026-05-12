@@ -57,6 +57,20 @@ const ComingSoon: React.FC<ComingSoonProps> = ({ onBypass }) => {
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         
+        {/* Agency Logo */}
+        <div className="mb-10">
+           <div className="inline-block bg-white p-3 rounded-sm shadow-xl">
+             <img 
+               src="images/Elite%20Logo.svg" 
+               alt="Elite Real Estate Pros" 
+               className="h-12 md:h-16 w-auto object-contain"
+               onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+               }}
+             />
+           </div>
+        </div>
+
         {/* Sneaky Trigger Badge */}
         <div 
           className="inline-block mb-8 cursor-default select-none group" 

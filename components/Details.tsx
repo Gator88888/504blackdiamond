@@ -36,10 +36,10 @@ const Details: React.FC = () => {
                    "Welcome to this immaculate single-level residence that perfectly blends modern comfort with desert elegance."
                  </p>
                  <p>
-                   Situated in a sought-after Casa Grande neighborhood, this 4-bedroom home offers an expansive open-concept layout designed for effortless living and entertaining. The gourmet kitchen features ample counter space and modern appliances, flowing seamlessly into a light-filled great room.
+                   Situated in the sought-after <strong>Ghost Ranch</strong> community of Casa Grande, this 4-bedroom home offers an expansive open-concept layout designed for effortless living and entertaining. The gourmet kitchen features ample counter space and modern appliances, flowing seamlessly into a light-filled great room perfect for family gatherings.
                  </p>
                  <p>
-                   Outside, discover your private retreat with a covered patio and professionally designed low-maintenance landscaping—ideal for enjoying Arizona's beautiful sunsets. With a spacious 3-car garage and significant energy savings from the installed solar system, this home checks every box for luxury and practicality.
+                   Outside, discover your private Pinal County retreat with a covered patio and professionally designed low-maintenance landscaping—ideal for enjoying Arizona's beautiful sunsets. With a spacious 3-car garage and significant energy savings from the <strong>grandfathered solar system</strong>, this home checks every box for luxury and practicality near the growing Arizona Innovation Corridor.
                  </p>
                </div>
             </div>
@@ -64,7 +64,12 @@ const Details: React.FC = () => {
                     </div>
                     <div>
                          <p className="text-xs uppercase tracking-widest text-gray-400 mb-1">Asking Price</p>
-                         <p className="text-xl md:text-2xl font-serif text-navy-900">{PROPERTY_INFO.price}</p>
+                         <div className="flex items-baseline gap-2">
+                           <p className="text-xl md:text-2xl font-serif text-navy-900">{PROPERTY_INFO.price}</p>
+                           {PROPERTY_INFO.originalPrice && (
+                             <p className="text-sm text-gray-400 line-through">{PROPERTY_INFO.originalPrice}</p>
+                           )}
+                         </div>
                     </div>
                 </div>
               </div>
@@ -98,7 +103,7 @@ const Details: React.FC = () => {
                     </div>
                      <div>
                         <h4 className="font-serif text-xl text-navy-900 mb-3 group-hover:text-gold transition-colors">Massive Industrial Growth</h4>
-                        <p className="text-gray-500 leading-relaxed text-sm">Invest where the jobs are. Casa Grande is booming with major industrial expansion, including Lucid Motors and the semiconductor supply chain, making this home a smart long-term investment.</p>
+                        <p className="text-gray-500 leading-relaxed text-sm">Invest where the jobs are. Casa Grande is booming with major industrial expansion, including <strong>Lucid Motors</strong> and the semiconductor supply chain, making this home a smart long-term investment.</p>
                      </div>
                 </div>
 
